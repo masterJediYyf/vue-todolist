@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: 'Header'
   // $style.mainHeader 等同于, 好处是不会有CSS命名冲突、可以自定义CSS命名, 方便调试
   // computed: {
   //   $style() {
@@ -15,7 +15,7 @@ export default {
   //     }
   //   }
   // }
-};
+}
 </script>
 
 <style lang="stylus" module>

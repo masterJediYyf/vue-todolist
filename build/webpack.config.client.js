@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const ExtractPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const baseConfig = require('./webpack.config.base')
-const { merge } = require('webpack-merge')
+const merge = require('webpack-merge')
 
 const isDev = process.env.NODE_ENV === 'development'
 

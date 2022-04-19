@@ -11,16 +11,16 @@ export default {
   props: {
     todo: {
       type: Object, // todo 的类型
-      required: true, // 是否强制引入
-    },
+      required: true // 是否强制引入
+    }
   },
   methods: {
-    deleteTodo() {
-      this.$emit("del", this.todo.id);
-    },
+    deleteTodo () {
+      this.$emit('del', this.todo.id)
+    }
   },
-  name: "Item",
-};
+  name: 'Item'
+}
 </script>
 
 // scoped 限制css样式生效的范围

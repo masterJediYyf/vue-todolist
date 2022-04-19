@@ -16,4 +16,3 @@ document.body.appendChild(root)
 new Vue({
   render: (h) => h(App)
 }).$mount(root)
-

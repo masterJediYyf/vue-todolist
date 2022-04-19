@@ -20,34 +20,34 @@ export default {
   props: {
     filter: {
       type: String,
-      required: true,
+      required: true
     },
     todos: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
-  name: "Tabs",
-  data() {
+  name: 'Tabs',
+  data () {
     return {
-      states: ["all", "active", "completed"],
-    };
+      states: ['all', 'active', 'completed']
+    }
   },
   computed: {
-    unFinishedTodoLength() {
+    unFinishedTodoLength () {
       // 如果 !todo.completed 的todo 就是我们想要filter的结果
-      return this.todos.filter((todo) => !todo.completed).length;
-    },
+      return this.todos.filter((todo) => !todo.completed).length
+    }
   },
   methods: {
-    toggleFilter(state) {
-      this.$emit("toggle", state);
+    toggleFilter (state) {
+      this.$emit('toggle', state)
     },
-    clearAllCompleted() {
-      this.$emit("clearAllCompleted");
-    },
-  },
-};
+    clearAllCompleted () {
+      this.$emit('clearAllCompleted')
+    }
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
