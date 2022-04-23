@@ -11,16 +11,17 @@ const config = {
   entry: path.join(__dirname, '../client/index.js'),
   output: {
     filename: 'bundle.[hash:8].js',
-    path: path.join(__dirname, '../dist')
+    path: path.join(__dirname, '../dist'),
+    publicPath: '/public/'
   },
   module: {
     rules: [
-      {
-        test: /\.(vue|js|jsx)$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/,
-        enforce: 'pre' // 预处理
-      },
+      // {
+      //   test: /\.(vue|js|jsx)$/,
+      //   loader: 'eslint-loader',
+      //   exclude: /node_modules/,
+      //   enforce: 'pre' // 预处理
+      // },
       {
         test: /\.vue$/,
         loader: 'vue-loader',

@@ -21,6 +21,12 @@ let config
 const devServer = {
   port: 8000,
   host: '127.0.0.1', // 监听地址
+  overlay: {
+    errors: true
+  },
+  historyApiFallback: {
+    index: '/public/index.html'
+  },
   hot: true
 }
 

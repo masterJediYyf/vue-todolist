@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.config.client.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js",
+    "dev": "yarn run lint-fix && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js",
     "practice": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.practice.js",
     "lint": "eslint --ext .js --ext .jsx --ext .vue client/",
     "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/",
@@ -25,7 +25,7 @@
     "sha1": "^1.1.1",
     "vue": "2.5.13",
     "vue-meta": "^1.4.3",
-    "vue-router": "^3.0.1",
+    "vue-router": "3.0.1",
     "vue-server-renderer": "^2.5.13",
     "vuex": "^3.0.1"
   },
